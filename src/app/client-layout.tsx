@@ -3,6 +3,7 @@
 import { AnimatePresence } from "framer-motion";
 import Header from "@/components/Header";
 import SideCard from "@/components/SideCard";
+import MovingGradientBg from "@/components/MovingGradientBg";
 
 export default function ClientLayout({
   children,
@@ -11,10 +12,11 @@ export default function ClientLayout({
 }) {
   return (
     <>
+      <MovingGradientBg />
       <Header />
       <div className="flex mt-32">
         <aside className="w-2/6">
-          <SideCard/>
+          <SideCard />
         </aside>
         <AnimatePresence mode="wait">
           <main className="">{children}</main>
