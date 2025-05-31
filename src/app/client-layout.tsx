@@ -15,7 +15,7 @@ export default function ClientLayout({
       <MovingGradientBg />
       <Header />
       <div className="sm:flex mt-32 gap-x-6 gap-y-4 w-11/12 mx-auto mb-10 ">
-        <aside className="sm:w-[35%] w-full ">
+        <aside className="sm:w-[45%] w-full ">
           <SideCard />
         </aside>
         <AnimatePresence mode="wait">

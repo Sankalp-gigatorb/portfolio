@@ -51,35 +51,57 @@ const Header = () => {
 
   const navItems = [
     { path: "/", label: "About" },
-    { path: "/resume", label: "Resume" },
     { path: "/projects", label: "Projects" },
+    { path: "/resume", label: "Resume" },
     { path: "/contact", label: "Contact Us" },
   ];
 
   const NavLink = ({ path, label }: { path: string; label: string }) => {
     const isActive = pathname === path;
+    const [isHovered, setIsHovered] = useState(false);
 
     return (
       <Link href={path} className="relative">
         <motion.div
           className="relative px-3 py-2"
           whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          transition={{ duration: 0.2, ease: "linear" }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           <span
-            className={`text-gray-600 hover:text-gray-900 ${
-              isActive ? "font-semibold" : ""
+            className={`relative z-10 transition-colors duration-200 ${
+              isActive
+                ? "font-[500] text-white"
+                : "text-gray-600 font-semibold hover:text-gray-900"
             }`}
           >
             {label}
           </span>
-          {isActive && (
-            <motion.div
-              className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gray-900"
-              layoutId="nav-underline"
-              transition={{ type: "spring", stiffness: 400, damping: 30 }}
-            />
-          )}
+          <AnimatePresence>
+            {isActive && (
+              <motion.div
+                className="absolute inset-0 rounded-lg  bg-[#0892e2] z-0"
+                layoutId="nav-bg-active"
+                style={{ opacity: 1 }}
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2, ease: "linear" }}
+              />
+            )}
+            {isHovered && !isActive && (
+              <motion.div
+                className="absolute inset-0 rounded-lg bg-sky-400 z-0"
+                layoutId="nav-bg-hover"
+                style={{ opacity: 0.01 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.04 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2, ease: "linear" }}
+              />
+            )}
+          </AnimatePresence>
         </motion.div>
       </Link>
     );
@@ -102,7 +124,7 @@ const Header = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <motion.span
-                className="text-2xl font-bold text-gray-800 hover:text-gray-900"
+                className="text-2xl font-bold text-[#0892e2] hover:text-gray-900"
                 layoutId="logo"
               >
                 Portfolio

@@ -1,35 +1,41 @@
 import AboutCard from "@/components/cards/AboutCard";
-import { FaSwatchbook, FaCameraRetro, FaCode } from "react-icons/fa6";
+import {
+  FaSwatchbook,
+  FaCameraRetro,
+  FaCode,
+  FaCloud,
+} from "react-icons/fa6";
 import { MdOutlineAppShortcut } from "react-icons/md";
 import Image from "next/image";
 
+
 const aboutCards = [
   {
-    icon: <FaSwatchbook className="text-purple-400" />,
-    title: "Ui/Ux Design",
+    icon: <FaCode className="text-orange-400" />,
+    title: "Full-Stack Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    color: "bg-purple-50",
+      "Building scalable and responsive web apps using React, Next.js, Node.js, and MongoDB with clean and maintainable code.",
+    color: "bg-orange-50",
   },
   {
     icon: <MdOutlineAppShortcut className="text-yellow-400" />,
-    title: "App Development",
+    title: "Backend Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "Designing robust REST APIs, handling authentication, database modeling, and server-side logic using Node.js, Express, Prisma, and SQL.",
     color: "bg-yellow-50",
   },
   {
-    icon: <FaCameraRetro className="text-sky-400" />,
-    title: "Photography",
+    icon: <FaSwatchbook className="text-purple-400" />,
+    title: "UI Engineering",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    color: "bg-sky-50",
+      "Creating responsive, accessible, and pixel-perfect interfaces using React, Tailwind CSS, ShadCN, and TypeScript.",
+    color: "bg-purple-50",
   },
   {
-    icon: <FaCode className="text-sky-400" />,
-    title: "Web Development",
+    icon: <FaCloud className="text-sky-400" />,
+    title: "Cloud & Deployment",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "Deploying applications on AWS with Docker, setting up CI/CD pipelines, and managing production environments.",
     color: "bg-sky-50",
   },
 ];
@@ -41,17 +47,17 @@ export default function Home() {
       <h2 className="text-3xl font-bold mb-2">About</h2>
       <div className="w-20 h-1 bg-sky-400 rounded mb-6" />
       <p className="text-gray-600 mb-2">
-        I&apos;m Creative Director and UI/UX Designer from Sydney, Australia,
-        working in web development and print media. I enjoy turning complex
-        problems into simple, beautiful and intuitive designs.
-      </p>
-      <p className="text-gray-600 mb-8">
-        My aim is to bring across your message and identity in the most creative
-        way. I created web design for many famous brand companies.
+        I'm a skilled Full-Stack MERN Developer focused on building scalable,
+        responsive web applications using React, Next.js, Node.js, MongoDB, and
+        SQL. I’ve delivered real-world solutions across healthcare, logistics,
+        and pet care owning both frontend and backend development, along with
+        deployment on AWS. I write clean, maintainable code and work with modern
+        tools like TypeScript, Prisma, and Docker to create high-performance
+        applications.
       </p>
 
       {/* What I Do Section */}
-      <h3 className="text-2xl font-semibold mb-4">What I Do!</h3>
+      <h3 className="text-2xl font-semibold my-6">What I Do!</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
         {aboutCards.map((card, idx) => (
           <AboutCard

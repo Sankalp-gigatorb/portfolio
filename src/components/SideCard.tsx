@@ -20,12 +20,12 @@ const SideCard = () => {
       <img
         src="https://randomuser.me/api/portraits/women/44.jpg"
         alt="Monalisa Ashley"
-        className="w-32 h-32 rounded-2xl object-cover -mt-16 border-4 border-white shadow-md"
+        className="w-52 h-52 rounded-2xl object-cover -mt-16 border-4 border-white shadow-md"
       />
       {/* Name and Title */}
-      <h2 className="text-2xl font-bold mt-2">Monalisa Ashley</h2>
+      <h2 className="text-2xl font-bold mt-2">Sankalp Nagle</h2>
       <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">
-        Ui/Ux Designer
+        Full-Stack Web Developer
       </span>
       {/* Social Icons */}
       <div className="flex gap-3 mt-2">
@@ -61,7 +61,7 @@ const SideCard = () => {
           <div>
             <div className="text-xs text-gray-400">Phone</div>
             <div className="text-sm font-medium text-gray-700">
-              +123 456 7890
+              +91 9302959198
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const SideCard = () => {
           <div>
             <div className="text-xs text-gray-400">Email</div>
             <div className="text-sm font-medium text-gray-700">
-              Example@Mail.Com
+              sankalp.nagle06@gmail.com
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ const SideCard = () => {
           <div>
             <div className="text-xs text-gray-400">Location</div>
             <div className="text-sm font-medium text-gray-700">
-              Hong Kong China
+              Indore, Madhya Pradesh
             </div>
           </div>
         </div>
@@ -88,13 +88,13 @@ const SideCard = () => {
           <div>
             <div className="text-xs text-gray-400">Birthday</div>
             <div className="text-sm font-medium text-gray-700">
-              May 27, 1990
+              Sep 06, 1997
             </div>
           </div>
         </div>
       </div>
       {/* Download CV Button */}
-      <button className="mt-4 w-full flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-red-400 text-white font-semibold py-3 rounded-xl shadow hover:from-pink-600 hover:to-red-500 transition">
+      <button className="mt-4 w-full flex items-center hover:cursor-pointer justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-700 text-white font-semibold py-3 rounded-xl shadow hover:from-sky-600 hover:to-sky-800 transition">
         <ArrowDownTrayIcon className="w-5 h-5" />
         Download CV
       </button>

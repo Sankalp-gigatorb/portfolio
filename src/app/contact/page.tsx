@@ -53,11 +53,10 @@ export default function Contact() {
       <h2 className="text-3xl font-bold mb-2">Contact</h2>
       <div className="w-20 h-1 bg-sky-400 rounded mb-6" />
       <div className="bg-gray-50 rounded-2xl p-8 mb-4">
-        <p className="text-lg text-gray-500 mb-1">
-          I&apos;m Always Open To Discussing Product
+        <p className="text-lg font-semibold text-gray-500 mb-1">
+          Have a project in mind or just want to say hello?
         </p>
-        <p className="text-2xl font-bold mb-6">design work or partnerships.</p>
-        <form className="space-y-6" onSubmit={handleSubmit}>
+        <form className="space-y-6 mt-5" onSubmit={handleSubmit}>
           <div>
             <label className="block text-gray-600 mb-1" htmlFor="name">
               Name *
@@ -88,7 +87,7 @@ export default function Contact() {
               className={inputClass}
             />
           </div>
-          <Button type="submit" className="mt-2 w-32" disabled={loading}>
+          <Button type="submit" className="mt-2 w-32 bg-sky-600 hover:bg-sky-700 hover:cursor-pointer" disabled={loading}>
             {loading ? "Sending..." : "Submit"}
           </Button>
         </form>
