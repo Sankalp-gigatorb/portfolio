@@ -15,7 +15,7 @@ import {
 
 const SideCard = () => {
   return (
-    <div className="max-w-xs mx-auto bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center gap-4">
+    <div className="w-full mx-auto bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center gap-4">
       {/* Profile Image */}
       <img
         src="https://randomuser.me/api/portraits/women/44.jpg"

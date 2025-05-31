@@ -46,12 +46,12 @@ export default function Contact() {
   }
 
   const inputClass =
-    "border-0 border-b border-gray-300 rounded-none bg-transparent focus-visible:ring-0 focus:border-pink-400 focus-visible:border-pink-400 outline-none shadow-none";
+    "border-0 border-b border-gray-300 rounded-none bg-transparent focus-visible:ring-0 focus:border-sky-400 focus-visible:border-sky-400 outline-none shadow-none";
 
   return (
-    <div className="max-w-3xl w-full mx-auto bg-white rounded-3xl shadow p-8">
+    <div className=" w-full mx-auto bg-white rounded-3xl shadow p-8">
       <h2 className="text-3xl font-bold mb-2">Contact</h2>
-      <div className="w-20 h-1 bg-pink-400 rounded mb-6" />
+      <div className="w-20 h-1 bg-sky-400 rounded mb-6" />
       <div className="bg-gray-50 rounded-2xl p-8 mb-4">
         <p className="text-lg text-gray-500 mb-1">
           I&apos;m Always Open To Discussing Product

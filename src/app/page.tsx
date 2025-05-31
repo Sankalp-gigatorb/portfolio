@@ -19,11 +19,11 @@ const aboutCards = [
     color: "bg-yellow-50",
   },
   {
-    icon: <FaCameraRetro className="text-pink-400" />,
+    icon: <FaCameraRetro className="text-sky-400" />,
     title: "Photography",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    color: "bg-pink-50",
+    color: "bg-sky-50",
   },
   {
     icon: <FaCode className="text-sky-400" />,
@@ -36,10 +36,10 @@ const aboutCards = [
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow p-8">
+    <div className=" mx-auto bg-white rounded-3xl shadow p-8">
       {/* About Section */}
       <h2 className="text-3xl font-bold mb-2">About</h2>
-      <div className="w-20 h-1 bg-pink-400 rounded mb-6" />
+      <div className="w-20 h-1 bg-sky-400 rounded mb-6" />
       <p className="text-gray-600 mb-2">
         I&apos;m Creative Director and UI/UX Designer from Sydney, Australia,
         working in web development and print media. I enjoy turning complex

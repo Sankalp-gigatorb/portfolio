@@ -91,7 +91,7 @@ export default function Projects() {
   return (
     <div className="w-full mx-auto bg-white rounded-3xl shadow p-8 min-h-screen">
       <h2 className="text-3xl font-bold mb-2">Portfolio</h2>
-      <div className="w-20 h-1 bg-pink-400 rounded mb-6" />
+      <div className="w-20 h-1 bg-sky-400 rounded mb-6" />
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
