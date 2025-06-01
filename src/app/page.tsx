@@ -6,33 +6,37 @@ import {
   FaCloud,
 } from "react-icons/fa6";
 import { MdOutlineAppShortcut } from "react-icons/md";
+import { VscCloud } from "react-icons/vsc";
+import { BsBrush } from "react-icons/bs";
+import { GoTerminal } from "react-icons/go";
+import { IoCodeSlashOutline } from "react-icons/io5";
 import Image from "next/image";
 
 
 const aboutCards = [
   {
-    icon: <FaCode className="text-orange-400" />,
+    icon: <IoCodeSlashOutline className="text-sky-400" />,
     title: "Full-Stack Development",
     description:
       "Building scalable and responsive web apps using React, Next.js, Node.js, and MongoDB with clean and maintainable code.",
     color: "bg-orange-50",
   },
   {
-    icon: <MdOutlineAppShortcut className="text-yellow-400" />,
+    icon: <GoTerminal className="text-sky-400" />,
     title: "Backend Development",
     description:
       "Designing robust REST APIs, handling authentication, database modeling, and server-side logic using Node.js, Express, Prisma, and SQL.",
     color: "bg-yellow-50",
   },
   {
-    icon: <FaSwatchbook className="text-purple-400" />,
-    title: "UI Engineering",
+    icon: <BsBrush className="text-sky-400" />,
+    title: "Web Design",
     description:
       "Creating responsive, accessible, and pixel-perfect interfaces using React, Tailwind CSS, ShadCN, and TypeScript.",
     color: "bg-purple-50",
   },
   {
-    icon: <FaCloud className="text-sky-400" />,
+    icon: <VscCloud className="text-sky-400" />,
     title: "Cloud & Deployment",
     description:
       "Deploying applications on AWS with Docker, setting up CI/CD pipelines, and managing production environments.",
@@ -65,7 +69,6 @@ export default function Home() {
             icon={card.icon}
             title={card.title}
             description={card.description}
-            color={card.color}
           />
         ))}
       </div>

@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   bg = "bg-pink-50",
 }) => (
-  <div className={`${bg} rounded-2xl p-5 max-w-xs w-full`}>
+  <div className={`bg-gray-50  rounded-2xl p-5 max-w-xs w-full`}>
     <div
       className={`rounded-xl overflow-hidden mb-4 bg-white flex items-center justify-center h-40`}
     >

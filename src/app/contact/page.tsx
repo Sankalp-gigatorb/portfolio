@@ -87,7 +87,11 @@ export default function Contact() {
               className={inputClass}
             />
           </div>
-          <Button type="submit" className="mt-2 w-32 bg-sky-600 hover:bg-sky-700 hover:cursor-pointer" disabled={loading}>
+          <Button
+            type="submit"
+            className="mt-2 w-32 bg-[#0892e2] hover:bg-sky-700 hover:cursor-pointer"
+            disabled={loading}
+          >
             {loading ? "Sending..." : "Submit"}
           </Button>
         </form>

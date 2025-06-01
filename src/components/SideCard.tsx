@@ -12,13 +12,15 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa6";
+import img1 from "@/../public/images/me.jpg";
+import Image from "next/image";
 
 const SideCard = () => {
   return (
     <div className="w-full mx-auto bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center gap-4">
       {/* Profile Image */}
-      <img
-        src="https://randomuser.me/api/portraits/women/44.jpg"
+      <Image
+        src={img1}
         alt="Monalisa Ashley"
         className="w-52 h-52 rounded-2xl object-cover -mt-16 border-4 border-white shadow-md"
       />

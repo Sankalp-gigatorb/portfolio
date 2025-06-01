@@ -59,26 +59,6 @@ const experience = [
   },
 ];
 
-const projects = [
-  {
-    name: "Story of Pets",
-    description:
-      "Developed 'Story Of Pets,' a full-stack web application enabling users to create accounts, register their pets, and maintain a daily journal of pet activities.",
-    technologies: "React.js, Node.js, Express.js, MySQL, JavaScript, Html, Css",
-  },
-  {
-    name: "Spandhan",
-    description:
-      "Designed and developed a full-stack hospital management system, enabling receptionists to book patient appointments, doctors to manage checkups, and the system to maintain medical records.",
-    technologies: "React.js, Node.js, Express.js, MySQL, JavaScript, Html, Css",
-  },
-  {
-    name: "Port doc",
-    description:
-      "Worked as a React Developer on a cutting-edge marine industry product, enabling port expense calculation and customization of port service cost items.",
-    technologies: "React.js, Java, Spring Boot, MySQL, JavaScript, Html, Css",
-  },
-];
 
 const certificates = [
   "React.js from CodeBetter in 2023.",
@@ -120,31 +100,15 @@ const Resume = () => {
         {experience.map((exp, idx) => (
           <div key={idx} className="bg-gray-50 rounded-xl p-5">
             <div className="flex justify-between flex-col md:flex-row md:items-center mb-1">
-              <span className="font-bold">
-                {exp.title}, {exp.company}
-              </span>
+              <span className="font-bold">{exp.company}</span>
               <span className="text-gray-500">{exp.duration}</span>
             </div>
+            <p className="font-semibold"> {exp.title}</p>
             <ul className="list-disc pl-5 text-gray-700 mt-2 space-y-1">
               {exp.details.map((d, i) => (
                 <li key={i}>{d}</li>
               ))}
             </ul>
-          </div>
-        ))}
-      </div>
-
-      {/* Projects */}
-      <h3 className="text-xl font-semibold mb-4 text-sky-500">Projects</h3>
-      <div className="space-y-6 mb-8">
-        {projects.map((proj, idx) => (
-          <div key={idx} className="bg-gray-50 rounded-xl p-5">
-            <div className="font-bold mb-1">{proj.name}</div>
-            <div className="text-gray-700 mb-1">{proj.description}</div>
-            <div>
-              <span className="font-semibold">Technologies:</span>{" "}
-              <span className="text-gray-700">{proj.technologies}</span>
-            </div>
           </div>
         ))}
       </div>

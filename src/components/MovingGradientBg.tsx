@@ -32,10 +32,10 @@ export default function MovingGradientBg() {
         width: "650px",
         height: "650px",
         background:
-          "linear-gradient(120deg, #0ea5e9 0%, #a6c1ee 50%, #0369a1 100%)",
+          "linear-gradient(120deg, #5ba9cd 0%, #add6ec 50%, #f5f2f9 100%)",
         backgroundSize: "300% 300%",
         filter: "blur(90px)",
-        opacity: 0.5,
+        opacity: 0.3,
       }}
       animate={controls}
     />
